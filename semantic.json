@@ -1,0 +1,22 @@
+{
+  "o": {
+    "type": "pronoun",
+    "description": "he, she, it.<br><br>\u2014 <i class='purple'>Middle</i> o<br>\u2014 <i class='purple'>Old</i> ol<br>\u2014 <i class='purple'>Proto</i> *ol \u201cdemonstrative adjective and third person singular pronoun\u201d"
+  },
+  "ağrı": {
+    "type": "adjective",
+    "description": "pain, ache.<br><br>\u2014 <i class='purple'>Ottoman</i> \u0622\u063a\u0631\u06cc\n\u2014 <i class='purple'>Middle</i> a\u011fr\u0131<br>\u2014 <i class='purple'>Old</i> a\u011fr\u0131\u011f<br>\u2014 <i class='purple'>Proto</i> *a\u011fr\u0131\u011f<br>\u2014 <i class='purple'>Proto</i> *a\u011fr\u0131- *+(U)\u011f<br>\u2014 <i class='purple'>Proto</i> a\u011fr\u0131-\n\u2014 <i class='purple'>Proto</i> *a\u011fr\u0131-\nIt is common for the U vowel that gets stuck in between to disappear.<br>\u2014 <i class='purple'>Proto</i> *a\u011f\u0131\u0259\u0131-\n\u2014 <i class='purple'>Proto</i> *a\u011f\u0131\u0259\u0131 +I-\n\u2014 <i class='purple'>Proto</i> *a\u011f\u0131\u0259\u0131 \u201cmouth; feeding and vocal organ\u201d\n\u2014 <i class='purple'>Proto</i> *a\u011f- *+(U)\u0259\n\u2014 <i class='purple'>Proto</i> *a\u011f-"
+  },
+  "uymak": {
+    "type": "verb",
+    "description": "<i>(intransitive)</i> to follow, to go with.\n\n\u2014 <i class='purple'>Middle</i> uy-\nStandard /ḏ/ \u2192 /y/ transformation.\n\u2014 <i class='purple'>Old</i> u\u011f-\n\u2014 <i class='purple'>Proto</i> *u\u011f- \u201cto follow\u201d"
+  },
+  "+(U)z": {
+    "type": "suffix",
+    "description": "As observed in the word \u201cikiz\u201d, it derives plural nouns by attaching to the noun. It is extremely rare. Perhaps, among the words it derives too are \u201cbiz\u201d and \u201csiz\u201d.\n\n<b class='green'>II.</b> A suffix left over from primitive times that functions to produce nouns from verbs. It has lost its functionality today."
+  },
+  "iz": {
+    "type": "noun",
+    "description": "footmark, scar.\n\n\u2014 <i class='purple'>Old</i> iz\nStandard /\u0259/ \u2192 /z/ transformation.\n\u2014 <i class='purple'>Proto</i> *i\u0259 \u201cfootprint\u201d\n\u2014 <i class='purple'>Proto</i> *i- *+(U)\u0259 \n\u2014 <i class='purple'>Proto</i> *i-\nStandard /\u011f/ \u2192 /\u2205/ transformation.\n\u2014 <i class='purple'>Proto</i> *i\u011f- \u201cto walk\u201d"
+  }
+}

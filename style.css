@@ -1,0 +1,173 @@
+/* Genel Stiller */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212; /* Koyu arka plan */
+  color: #e0e0e0;         /* Daha açýk metin rengi */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;       /* Daha iyi okunabilirlik için satýr yüksekliði */
+}
+
+.container {
+  background-color: #202020;
+  width: 90%;              /* Daha geniþ içerik alaný */
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif; /* Baþlýk için serif font */
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #66c285;        /* Daha canlý yeþil */
+}
+
+/* Arama Kutusu ve Öneri Kutusu Kapsayýcýsý */
+.search-container {
+  position: relative; /* Öneri kutusunu konumlandýrmak için */
+}
+
+/* Arama Kutusu */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0; /* Alt boþluðu kaldýr */
+}
+
+.search-box input {
+  padding: 15px;
+  width: 80%;             /* Daha geniþ arama kutusu */
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #333;
+  transition: box-shadow 0.3s ease; /* Gölge geçiþi eklendi */
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 8px #4CAF50; /* Daha parlak ve geniþ yeþil gölge */
+  border: 2px solid #4CAF50; /* Ýsteðe baðlý: Yeþil kenarlýk ekleyebilirsiniz */
+}
+}
+
+.search-box button {
+  padding: 15px 20px;
+  background-color: #66c285;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #52a875;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Sonuç Alaný */
+.result {
+  text-align: left;
+}
+
+.result h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #66c285; /* Baþlýk rengi */
+}
+
+.result .details {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.result .details p {
+  margin-right: 10px;
+}
+
+.result .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #fff;
+}
+
+.result .highlight { /* Vurgulanan kelimelerin stili */
+  font-weight: bold;
+  color: #c576b8;   /* Daha canlý mor */
+}
+
+.result .error {
+  text-align: center;
+  color: #ff6347;   /* Hata mesajý için kýrmýzý */
+}
+
+/* Öneri Kutusu (Suggestions) */
+#suggestions {
+  position: absolute; 
+  top: 100%; /* .search-container'ýn altýna */
+  left: 0;
+  width: 100%; /* .search-container ile ayný geniþlikte */
+  background-color: #202124; /* Arka plan rengi */
+  border: none; /* Kenarlýk yok */
+  border-radius: 8px; /* Köþeleri yuvarlat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none; /* Baþlangýçta gizli */
+}
+
+#suggestions.active { 
+  display: block;
+}
+
+#suggestions ul {
+  list-style: none;
+  padding: 8px 0; /* Üst ve alt padding */
+  margin: 0;
+}
+
+#suggestions li {
+  padding: 8px 16px; /* Sol ve sað padding */
+  color: white; /* Yazý rengi */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+#suggestions li:hover {
+  background-color: #303134; /* Hover rengi */
+}
+
+
+/* Ekran Boyutuna Göre Duyarlýlýk (Responsive) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .search-box input {
+    width: 70%;
+  }
+
+  .result h3 {
+    font-size: 1.8rem;
+  }
+
+  .result .description {
+    font-size: 1rem;
+  }
+}
